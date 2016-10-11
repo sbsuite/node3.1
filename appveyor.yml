@@ -1,6 +1,13 @@
 configuration: Release
 version: '1.0.{build}'
 
+assembly_info:
+  patch: true
+  file: AssemblyInfo.*
+  assembly_version: "{version}"
+  assembly_file_version: "{version}"
+  assembly_informational_version: "{version}"
+
 before_build:
   - nuget restore
 
@@ -10,3 +17,4 @@ artifacts:
 deploy:
   provider: NuGet
   api_key: ++chmJA4vMpQ8q/psc3fh/lAX2eLtxLCguPvOmUnPRLIRmWCbgGw0OAMATOlvXH3
+  artifact: /.*\.nupkg/
