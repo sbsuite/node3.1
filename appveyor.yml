@@ -1,5 +1,7 @@
+appName: 'node3.1'
 configuration: Release
 version: '1.0.{build}'
+file
 
 assembly_info:
   patch: true
@@ -13,6 +15,13 @@ before_build:
 
 artifacts:
   - path: '*.nupkg'
+
+build:
+  publish_nuget: true
+
+after_build:
+  - nuget pack {appName}\{appName}.nuspec -Version %appveyor_build_version%
+  - appveyor PushArtifact {appName}.%appveyor_build_version%.nupkg
 
 deploy:
   provider: NuGet
