@@ -12,7 +12,7 @@ before_build:
   - nuget restore
 
 artifacts:
-  - path: '*.nupkg'
+  - path: '**\*.nupkg'
 
 build:
   publish_nuget: true
