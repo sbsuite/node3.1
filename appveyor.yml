@@ -1,4 +1,3 @@
-appName: 'node3.1'
 configuration: Release
 version: '1.0.{build}'
 
@@ -19,8 +18,8 @@ build:
   publish_nuget: true
 
 after_build:
-  - nuget pack {appName}\{appName}.nuspec -Version %appveyor_build_version%
-  - appveyor PushArtifact {appName}.%appveyor_build_version%.nupkg
+  - nuget pack %APPVEYOR_PROJECT_NAME$\%APPVEYOR_PROJECT_NAME$.nuspec -Version %appveyor_build_version%
+  - appveyor PushArtifact %APPVEYOR_PROJECT_NAME$.%appveyor_build_version%.nupkg
 
 deploy:
   provider: NuGet
