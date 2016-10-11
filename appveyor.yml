@@ -6,3 +6,6 @@ before_build:
 
 artifacts:
   - path: '*.nupkg'
+
+deploy:
+  provider: NuGet
