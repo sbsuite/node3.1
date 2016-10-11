@@ -1,7 +1,6 @@
 appName: 'node3.1'
 configuration: Release
 version: '1.0.{build}'
-file
 
 assembly_info:
   patch: true
