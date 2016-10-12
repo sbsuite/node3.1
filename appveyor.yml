@@ -12,7 +12,8 @@ before_build:
   - nuget restore
 
 artifacts:
-  - path: '**\*.nupkg'
+  - path: '$(appveyor_project_name)\*.nupkg'
+  - name: nupkg
 
 build:
   publish_nuget: true
