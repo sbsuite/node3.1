@@ -13,7 +13,7 @@ before_build:
 
 artifacts:
   - path: '$(appveyor_project_name)\*.nupkg'
-  - name: nupkg
+	name: nupkg
 
 build:
   publish_nuget: true
