@@ -8,5 +8,9 @@ namespace node3_1
 {
    public class FileHelper
    {
+      public bool SaveFile(string fileName)
+      {
+         return true;
+      }
    }
 }
