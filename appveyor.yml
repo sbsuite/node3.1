@@ -29,7 +29,7 @@ build:
 deploy:
   - provider: NuGet
     on:
-	  branch: develop
+      branch: develop
     server: https://ci.appveyor.com/nuget/design2code/api/v2/package
     api_key: 
       secure: DDdqquza1rjvPbT/uXPydYO0re75ik5zFilZ55nEdQU=
