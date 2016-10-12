@@ -27,7 +27,7 @@ build:
   publish_nuget: true
 
 deploy:
-  provider: NuGet
+  - provider: NuGet
   on:
 	branch: develop
   server: https://ci.appveyor.com/nuget/design2code/api/v2/package
@@ -35,8 +35,7 @@ deploy:
     secure: DDdqquza1rjvPbT/uXPydYO0re75ik5zFilZ55nEdQU=
   artifact: /.*\.nupkg/
 
-deploy:
-  provider: NuGet
+  - provider: NuGet
   on:
     branch: master
   api_key: 
