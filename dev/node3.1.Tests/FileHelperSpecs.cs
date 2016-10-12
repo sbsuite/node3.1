@@ -8,7 +8,6 @@ namespace node3_1
       [Test]
       public void TestOne()
       {
-
          Assert.IsTrue(true);
       }
    }
