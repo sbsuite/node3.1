@@ -4,12 +4,6 @@ configuration:
 
 version: '1.2.{build}'
 
-branches:
-  # whitelist
-  only:
-    - master
-    - develop
-
 assembly_info:
   patch: true
   file: AssemblyInfo.*
