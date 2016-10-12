@@ -2,14 +2,14 @@ configuration:
   - Release
   - Debug
 
-version: '1.0.{build}'
+version: '1.2.{build}'
 
 assembly_info:
   patch: true
   file: AssemblyInfo.*
   assembly_version: "{version}"
   assembly_file_version: "{version}"
-  assembly_informational_version: "{version}"
+  assembly_informational_version: "{version}-pre"
 
 cache:
   - packages -> **\packages.config  # preserve "packages" directory in the root of build folder but will reset it if packages.config is modified
