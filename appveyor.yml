@@ -12,7 +12,7 @@ before_build:
   - nuget restore
 
 artifacts:
-  - path: '$(appveyor_project_name)\*.nupkg'
+  - path: '**\$(appveyor_project_name)*.nupkg'
 	name: nupkg
 
 build:
