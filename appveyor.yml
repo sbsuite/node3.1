@@ -1,6 +1,5 @@
 configuration: 
   - Release
-  - Debug
 
 version: '1.2.{build}'
 
@@ -16,6 +15,10 @@ cache:
 
 before_build:
   - nuget restore
+
+nuget:
+  account_feed: true
+  project_feed: true
 
 build:
   publish_nuget: true
@@ -35,3 +38,8 @@ deploy:
     api_key: 
       secure: ++chmJA4vMpQ8q/psc3fh/lAX2eLtxLCguPvOmUnPRLIRmWCbgGw0OAMATOlvXH3
     artifact: /.*\.nupkg/
+
+test:
+  categories:
+    except:
+      - IntegrationTest
