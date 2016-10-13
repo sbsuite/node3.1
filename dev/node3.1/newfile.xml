@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SBSuite.DevExpress</id>
+    <version>1.0.2</version>
+    <authors>rob, msevestre</authors>
+    <owners>rob, msevestre</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>repack the devexpress components</description>
+    <releaseNotes>No changes</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags></tags>
+  </metadata>
+   <files>
+    <!-- Add a readme -->
+    <file src="DevExpress.XtraGrid.v15.1.dll" target="lib\net452" />
+    <file src="DevExpress.XtraCharts.v15.1.dll" target="lib\net452" />
+    <file src="DevExpress.XtraCharts.v15.1.UI.dll" target="lib\net452" />
+    <file src="DevExpress.XtraEditors.v15.1.dll" target="lib\net452" />
+    <file src="DevExpress.Data.v15.1.dll" target="lib\net452" />
+    <file src="DevExpress.Printing.v15.1.Core.dll" target="lib\net452" />
+    <file src="DevExpress.Utils.v15.1.dll" target="lib\net452" />
+    <file src="DevExpress.XtraLayout.v15.1.dll" target="lib\net452" />
+  </files>
+</package>
