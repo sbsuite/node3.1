@@ -33,7 +33,7 @@ deploy:
   artifact: /.*\.nupkg/
 
 test_script:
-  - nunit3-console.exe dev\node3.1.Tests\bin\Release\*.Tests.dll
+  - nunit3-console.exe dev\node3.1.Tests\node3.1.Tests.csproj
 
 test:
   categories:
