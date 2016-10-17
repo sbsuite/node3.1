@@ -32,7 +32,10 @@ deploy:
     secure: ++chmJA4vMpQ8q/psc3fh/lAX2eLtxLCguPvOmUnPRLIRmWCbgGw0OAMATOlvXH3
   artifact: /.*\.nupkg/
 
-#test:
-#  categories:
-#    except:
-#      - IntegrationTest
+test_script:
+  - nunit3-console.exe
+
+test:
+  categories:
+    except:
+      - IntegrationTest
