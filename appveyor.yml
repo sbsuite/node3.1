@@ -22,6 +22,7 @@ nuget:
 
 build:
   publish_nuget: true
+  project: node3.1.sln 
 
 deploy:
   provider: NuGet
