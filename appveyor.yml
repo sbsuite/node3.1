@@ -31,7 +31,7 @@ deploy:
     secure: ++chmJA4vMpQ8q/psc3fh/lAX2eLtxLCguPvOmUnPRLIRmWCbgGw0OAMATOlvXH3
   artifact: /.*\.nupkg/
 
-test:
-  categories:
-    except:
-      - IntegrationTest
+#test:
+#  categories:
+#    except:
+#      - IntegrationTest
