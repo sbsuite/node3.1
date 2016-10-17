@@ -30,10 +30,12 @@ deploy:
     branch: master
   api_key: 
     secure: ++chmJA4vMpQ8q/psc3fh/lAX2eLtxLCguPvOmUnPRLIRmWCbgGw0OAMATOlvXH3
+
   artifact: /.*\.nupkg/
 
 test_script:
   - packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user -target:nunit3-console.exe -targetargs:"dev\node3.1.Tests\node3.1.Tests.csproj /config:Release"
+  - packages\coveralls.net.0.7.0\tools\csmacnz.Coveralls.exe --opencover -i .\results.xml
 
 test:
   categories:
