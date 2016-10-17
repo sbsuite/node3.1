@@ -8,7 +8,8 @@ namespace node3_1
       [Test]
       public void SimpleTest()
       {
-         Assert.IsTrue(true);
+         var fileHelper = new FileHelper();
+         Assert.That(fileHelper.SaveFile(""));
       }
 
       [IntegrationTest]

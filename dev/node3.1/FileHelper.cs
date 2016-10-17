@@ -12,5 +12,10 @@ namespace node3_1
       {
          return true;
       }
+
+      public bool DeleteFile(string filName)
+      {
+         return true;
+      }
    }
 }

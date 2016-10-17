@@ -22,22 +22,20 @@ nuget:
 
 build:
   publish_nuget: true
+  project: node3.1.sln 
 
 deploy:
-  - provider: NuGet
-    on:
-      branch: develop
-    server: https://ci.appveyor.com/nuget/design2code/api/v2/package
-    api_key: 
-      secure: DDdqquza1rjvPbT/uXPydYO0re75ik5zFilZ55nEdQU=
-    artifact: /.*\.nupkg/
+  provider: NuGet
+  on:
+    branch: master
+  api_key: 
+    secure: ++chmJA4vMpQ8q/psc3fh/lAX2eLtxLCguPvOmUnPRLIRmWCbgGw0OAMATOlvXH3
 
-  - provider: NuGet
-    on:
-      branch: master
-    api_key: 
-      secure: ++chmJA4vMpQ8q/psc3fh/lAX2eLtxLCguPvOmUnPRLIRmWCbgGw0OAMATOlvXH3
-    artifact: /.*\.nupkg/
+  artifact: /.*\.nupkg/
+
+test_script: 
+  - ps: ./reportCoverage.ps1
+  
 
 test:
   categories:
