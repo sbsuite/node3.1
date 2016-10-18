@@ -5,7 +5,7 @@ version: '1.2.{build}'
 
 environment:
   COVERALLS_REPO_TOKEN:
-    secure: BrPCsUeirQjnVvJllxai8sP82z4OruBedi8I7WhBDPSxq/yi4W42ryXML7IVPwYZ
+    secure: 9Quk4g9ozgWrhZOjsuEXN1bCIKbMK8xcizjTTt9m/rCyex3RRVJN70ZXELeGLbJn
 
 assembly_info:
   patch: true
