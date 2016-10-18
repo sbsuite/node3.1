@@ -38,7 +38,7 @@ deploy:
   artifact: /.*\.nupkg/
 
 test_script: 
-  - ps: ./reportCoverage.ps1
+  - ps: ./testAndCover.ps1
   
 
 test:
