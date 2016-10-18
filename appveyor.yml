@@ -37,6 +37,9 @@ deploy:
 
   artifact: /.*\.nupkg/
 
+artifacts:
+  - path: coverage
+    name: coverage
 test_script: 
   - ps: ./reportCoverage.ps1
   
