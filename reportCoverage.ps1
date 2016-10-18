@@ -5,3 +5,4 @@ $env:APPVEYOR_BUILD_NUMBER
 
 $reportGenerator = (Resolve-Path "packages/ReportGenerator.*/tools/ReportGenerator.exe").ToString()
 & $reportGenerator "-reports:TestResult.xml" "-targetdir:.\coverage"
+copy TestResult.xml coverage\
