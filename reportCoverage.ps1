@@ -1,6 +1,6 @@
 $coveralls = (Resolve-Path "packages/coveralls.net.*/tools/csmacnz.coveralls.exe").ToString()
-$testProj = (Resolve-Path "dev\*.Tests\*.Tests.csproj").ToString()
-$openCover = (Resolve-Path "packages\OpenCover.4.6.519\tools\OpenCover.Console.exe").ToString()
+$testProj = (Resolve-Path "dev/*.Tests/*.Tests.csproj").ToString()
+$openCover = (Resolve-Path "packages/OpenCover.*/tools/OpenCover.Console.exe").ToString()
 $testFilter = "cat!=IntegrationTest"
 $targetArgs = "$testProj --where=$testFilter /config:Release"
 $testFilter = "+[*]*-[*.Tests]*"
