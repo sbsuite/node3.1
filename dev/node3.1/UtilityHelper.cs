@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace node3_1
+﻿namespace node3_1
 {
-    public class UtilityHelper
-    {
-    }
+   public class UtilityHelper
+   {
+      private readonly FileHelper _fileHelper;
+
+      public UtilityHelper(FileHelper fileHelper)
+      {
+         _fileHelper = fileHelper;
+      }
+
+      public void MethodNotTested(string filename)
+      {
+         _fileHelper.SaveFile(filename);
+      }
+   }
 }
