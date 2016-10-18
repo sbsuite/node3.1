@@ -7,6 +7,7 @@
       public UtilityHelper(FileHelper fileHelper)
       {
          _fileHelper = fileHelper;
+
       }
 
       public void MethodNotTested(string filename)
