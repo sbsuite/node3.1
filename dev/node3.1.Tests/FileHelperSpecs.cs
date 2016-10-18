@@ -1,6 +1,7 @@
-﻿using NUnit.Framework;
+﻿using node3_1;
+using NUnit.Framework;
 
-namespace node3_1
+namespace Tests.node3_1
 {
    [TestFixture]
    public class FileHelperSpecs

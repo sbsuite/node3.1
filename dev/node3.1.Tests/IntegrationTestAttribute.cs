@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace node3_1
+namespace Tests.node3_1
 {
    public class IntegrationTestAttribute  : CategoryAttribute
    {
