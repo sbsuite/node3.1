@@ -28,6 +28,9 @@ build:
   publish_nuget: true
   project: node3.1.sln 
 
+after_build:
+  - cmd: nuget pack test-scripts.nuspec -version %APPVEYOR_BUILD_VERSION%
+
 deploy:
   provider: NuGet
   on:
