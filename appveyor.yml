@@ -38,7 +38,7 @@ deploy:
   api_key: 
     secure: ++chmJA4vMpQ8q/psc3fh/lAX2eLtxLCguPvOmUnPRLIRmWCbgGw0OAMATOlvXH3
 
-  artifact: /.*\.nupkg/
+  artifact: '**\*.nupkg'
 
 test_script: 
   - ps: ./test-and-cover.ps1
