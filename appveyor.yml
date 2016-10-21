@@ -32,6 +32,7 @@ after_build:
   - cmd: nuget pack dev\NativeLibrary\NativeLibrary.nuspec -version %APPVEYOR_BUILD_VERSION%
   - ps: Get-ChildItem .\SBSuite.NativeLibrary.*.nupkg | % { Push-AppveyorArtifact $_.FullName -FileName $_.Name }
 
+
 deploy:
   provider: NuGet
   on:
