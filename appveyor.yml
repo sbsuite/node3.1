@@ -28,7 +28,7 @@ build:
   publish_nuget: true
   project: node3.1.sln 
 
-before_deploy:
+after_build:
   - cmd: nuget pack dev\NativeLibrary\NativeLibrary.nuspec -version %APPVEYOR_BUILD_VERSION%
   - ps: Get-ChildItem .\dev\NativeLibrary\*.nupkg | % { Push-AppveyorArtifact $_.FullName -FileName $_.Name }
 
