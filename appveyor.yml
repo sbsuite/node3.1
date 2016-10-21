@@ -28,8 +28,9 @@ build:
   publish_nuget: true
   project: node3.1.sln 
 
-after_build:
+before_deploy:
   - cmd: nuget pack dev\NativeLibrary\NativeLibrary.nuspec -version %APPVEYOR_BUILD_VERSION%
+  - ps: Get-ChildItem .\dev\NativeLibrary\*.nupkg | % { Push-AppveyorArtifact $_.FullName -FileName $_.Name }
 
 deploy:
   provider: NuGet
@@ -37,8 +38,6 @@ deploy:
     branch: master
   api_key: 
     secure: ++chmJA4vMpQ8q/psc3fh/lAX2eLtxLCguPvOmUnPRLIRmWCbgGw0OAMATOlvXH3
-
-  artifact: '**\*.nupkg'
 
 test_script: 
   - ps: ./test-and-cover.ps1
