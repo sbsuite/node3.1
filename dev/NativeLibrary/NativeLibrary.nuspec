@@ -12,6 +12,7 @@
     <tags></tags>
   </metadata>
    <files>
-    <file src="..\..\*\NativeLibrary.dll" target="tools" />
+    <file src="..\..\*\NativeLibrary.dll" target="content" />
+    <file src=".\Install.ps1" target="tools" />
   </files>
 </package>
