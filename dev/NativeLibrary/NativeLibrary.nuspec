@@ -13,6 +13,5 @@
   </metadata>
    <files>
     <file src="..\..\*\NativeLibrary.dll" target="native" />
-    <file src="Install.ps1" target="tools" />
   </files>
 </package>
