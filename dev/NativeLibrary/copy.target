@@ -1,0 +1,3 @@
+<Target Name="AfterBuild"
+    <Message Text="Hello build target" />
+</Target>
