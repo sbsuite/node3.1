@@ -11,7 +11,10 @@
     <copyright>Copyright 2016</copyright>
     <tags></tags>
   </metadata>
-   <files>
-    <file src="..\..\*\NativeLibrary.dll" target="tools" />
+  <files>
+    <file src="..\..\*\NativeLibrary.dll" target="lib" />
   </files>
+  <references>
+
+  </references>
 </package>
