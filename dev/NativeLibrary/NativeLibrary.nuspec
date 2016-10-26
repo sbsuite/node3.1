@@ -10,11 +10,11 @@
     <releaseNotes>No changes</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags></tags>
+    <references>
+
+    </references>
   </metadata>
   <files>
     <file src="..\..\*\NativeLibrary.dll" target="lib" />
   </files>
-  <references>
-
-  </references>
 </package>
