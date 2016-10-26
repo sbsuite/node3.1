@@ -12,6 +12,6 @@
     <tags></tags>
   </metadata>
    <files>
-    <file src="..\..\*\NativeLibrary.dll" target="tools\native" />
+    <file src="..\..\*\NativeLibrary.dll" target="tools" />
   </files>
 </package>
