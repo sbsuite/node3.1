@@ -10,11 +10,18 @@
     <releaseNotes>No changes</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags></tags>
-    <references>
-
-    </references>
   </metadata>
   <files>
-    <file src="..\..\*\NativeLibrary.dll" target="content\bin\native" />
+    <file src="..\..\Debug\NativeLibrary.dll" target="content\bin\native\x86\Debug" />
+    <file src="..\..\Release\NativeLibrary.dll" target="content\bin\native\x86\Release" />
+    <file src="..\..\x64\Debug\NativeLibrary.dll" target="content\bin\native\x64\Debug" />
+    <file src="..\..\x64\Release\NativeLibrary.dll" target="content\bin\native\x64\Release" />
+
+    <file src="..\..\Debug\NativeLibrary.lib" target="content\bin\native\x86\Debug" />
+    <file src="..\..\Release\NativeLibrary.lib" target="content\bin\native\x86\Release" />
+    <file src="..\..\x64\Debug\NativeLibrary.lib" target="content\bin\native\x64\Debug" />
+    <file src="..\..\x64\Release\NativeLibrary.lib" target="content\bin\native\x64\Release" />
+
+    <file src="NativeLibrary.h" target="content\bin\native\Include" />
   </files>
 </package>
