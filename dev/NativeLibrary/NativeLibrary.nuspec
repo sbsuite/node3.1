@@ -15,7 +15,6 @@
     </references>
   </metadata>
   <files>
-    <file src="..\..\*\NativeLibrary.dll" target="native" />
-    <file src="./copy.target" target="build" />
+    <file src="..\..\*\NativeLibrary.dll" target="content\bin\native" />
   </files>
 </package>
