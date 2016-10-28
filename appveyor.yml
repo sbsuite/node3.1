@@ -4,10 +4,10 @@ configuration:
 version: '1.2.{build}'
 
 build_script:
-  -cmd: msbuild node3.1.sln /property:Configuration=Debug;Platform=x86 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
-  -cmd: msbuild node3.1.sln /property:Configuration=Debug;Platform=x64 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
-  -cmd: msbuild node3.1.sln /property:Configuration=Release;Platform=x86 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
-  -cmd: msbuild node3.1.sln /property:Configuration=Release;Platform=x64 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
+  - cmd: msbuild node3.1.sln /property:Configuration=Debug;Platform=x86 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
+  - cmd: msbuild node3.1.sln /property:Configuration=Debug;Platform=x64 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
+  - cmd: msbuild node3.1.sln /property:Configuration=Release;Platform=x86 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
+  - cmd: msbuild node3.1.sln /property:Configuration=Release;Platform=x64 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
 
 environment:
   COVERALLS_REPO_TOKEN:
