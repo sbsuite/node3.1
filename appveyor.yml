@@ -1,17 +1,14 @@
+configuration: 
+  - Release
+
 version: '1.2.{build}'
+
+build_script:
+  msbuild node3.1.sln /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
 
 environment:
   COVERALLS_REPO_TOKEN:
     secure: 9Quk4g9ozgWrhZOjsuEXN1bCIKbMK8xcizjTTt9m/rCyex3RRVJN70ZXELeGLbJn
-
-platform:
-  - x86
-  - x64
-  - Any CPU
-
-configuration:
-  - Debug
-  - Release
 
 assembly_info:
   patch: true
